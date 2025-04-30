@@ -1,0 +1,20 @@
+{
+  "name": "byu-pathway-community",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": ["byu", "pathway", "community", "support", "site", "student", "learners","byu-pathway"],
+  "repository": {
+    "type": "git",
+    "url": "",
+  "author": "Eluwa",
+  "license": "ISC",
+  "description": "A student support site for BYU-Pathway learners",
+  "dependencies": {
+      "express": "^5.1.0"
+    }
+  }
+}
