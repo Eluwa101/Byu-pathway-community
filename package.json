@@ -6,15 +6,27 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": ["byu", "pathway", "community", "support", "site", "student", "learners","byu-pathway"],
+  "keywords": [
+    "byu",
+    "pathway",
+    "community",
+    "support",
+    "site",
+    "student",
+    "learners",
+    "byu-pathway"
+  ],
   "repository": {
     "type": "git",
     "url": "",
-  "author": "Eluwa",
-  "license": "ISC",
-  "description": "A student support site for BYU-Pathway learners",
-  "dependencies": {
+    "author": "Eluwa",
+    "license": "ISC",
+    "description": "A student support site for BYU-Pathway learners",
+    "dependencies": {
       "express": "^5.1.0"
     }
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.7"
   }
 }
