@@ -15,6 +15,38 @@ app.get('/', (req, res) => {
   res.send('Welcome to BYU-Pathway Community Server with Database 📦');
 });
 
+const adminPassword = 'byu123'; // Change this to something secure
+
+app.get('/admin', (req, res) => {
+  res.send(`
+    <form method="POST" action="/admin-login">
+      <h2>Admin Login</h2>
+      <input type="password" name="password" placeholder="Enter admin password" required />
+      <button type="submit">Login</button>
+    </form>
+  `);
+});
+
+app.post('/admin-login', (req, res) => {
+  const { password } = req.body;
+  if (password === adminPassword) {
+    req.session = { isAdmin: true }; // Fake session for now
+    res.redirect('/submissions');
+  } else {
+    res.send('❌ Incorrect password. <a href="/admin">Try again</a>.');
+  }
+});
+
+// Protect the submissions page
+app.get('/submissions', (req, res, next) => {
+  if (req.session && req.session.isAdmin) {
+    next();
+  } else {
+    res.redirect('/admin');
+  }
+});
+
+
 app.post('/submit', (req, res) => {
   const { name, email, location, question } = req.body;
 
@@ -62,6 +94,12 @@ app.get('/submissions', (req, res) => {
         res.send(html);
       }
     });
+  });
+  
+  // Temporary in-memory session mock
+app.use((req, res, next) => {
+    if (!req.session) req.session = {};
+    next();
   });
   
 
