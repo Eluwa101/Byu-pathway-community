@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const db = require('./database'); // <-- Import our database setup
+const sqlite3 = require('sqlite3').verbose();
 
 const app = express();
 const port = 3000;
@@ -28,6 +29,42 @@ app.post('/submit', (req, res) => {
   });
   stmt.finalize();
 });
+
+app.get('/submissions', (req, res) => {
+    db.all('SELECT * FROM submissions ORDER BY id DESC', [], (err, rows) => {
+      if (err) {
+        console.error(err.message);
+        res.status(500).send('Error retrieving submissions.');
+      } else {
+        let html = `
+          <h1>📝 Student Submissions</h1>
+          <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Location</th>
+              <th>Question</th>
+            </tr>
+        `;
+  
+        rows.forEach(row => {
+          html += `
+            <tr>
+              <td>${row.name}</td>
+              <td>${row.email}</td>
+              <td>${row.location || 'Unknown'}</td>
+              <td>${row.question}</td>
+            </tr>
+          `;
+        });
+  
+        html += '</table>';
+        res.send(html);
+      }
+    });
+  });
+  
+
 
 // Start server
 app.listen(port, () => {
