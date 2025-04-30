@@ -1,0 +1,1 @@
+console.log("Welcome to the BYU-Pathway community site!");
