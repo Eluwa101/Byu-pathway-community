@@ -1,110 +1,43 @@
-const express = require('express');
-const path = require('path');
-const db = require('./database'); // <-- Import our database setup
-const sqlite3 = require('sqlite3').verbose();
+// server.js
+import express from 'express';
+import path from 'path';
+import session from 'express-session';
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
+// Load environment variables
+dotenv.config();
+
+// Route Imports
+import publicRoutes from './routes/publicRoutes.js';
+import submissionRoutes from './routes/submissionRoutes.js';
+import adminRoutes from './routes/adminroutes.js';
+import contentRoutes from './routes/contentRoutes.js';
+
+// Setup app and directory
 const app = express();
-const port = 3000;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // Middleware
-app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+  secret: process.env.SESSION_SECRET || 'byu_secret',
+  resave: false,
+  saveUninitialized: false
+}));
 
 // Routes
-app.get('/', (req, res) => {
-  res.send('Welcome to BYU-Pathway Community Server with Database 📦');
-});
-
-const adminPassword = 'byu123'; // Change this to something secure
-
-app.get('/admin', (req, res) => {
-  res.send(`
-    <form method="POST" action="/admin-login">
-      <h2>Admin Login</h2>
-      <input type="password" name="password" placeholder="Enter admin password" required />
-      <button type="submit">Login</button>
-    </form>
-  `);
-});
-
-app.post('/admin-login', (req, res) => {
-  const { password } = req.body;
-  if (password === adminPassword) {
-    req.session = { isAdmin: true }; // Fake session for now
-    res.redirect('/submissions');
-  } else {
-    res.send('❌ Incorrect password. <a href="/admin">Try again</a>.');
-  }
-});
-
-// Protect the submissions page
-app.get('/submissions', (req, res, next) => {
-  if (req.session && req.session.isAdmin) {
-    next();
-  } else {
-    res.redirect('/admin');
-  }
-});
-
-
-app.post('/submit', (req, res) => {
-  const { name, email, location, question } = req.body;
-
-  const stmt = db.prepare('INSERT INTO submissions (name, email, location, question) VALUES (?, ?, ?, ?)');
-  stmt.run(name, email, location, question, function (err) {
-    if (err) {
-      console.error(err.message);
-      res.status(500).send('Error saving to database.');
-    } else {
-      res.send('✅ Your submission has been saved to the database!');
-    }
-  });
-  stmt.finalize();
-});
-
-app.get('/submissions', (req, res) => {
-    db.all('SELECT * FROM submissions ORDER BY id DESC', [], (err, rows) => {
-      if (err) {
-        console.error(err.message);
-        res.status(500).send('Error retrieving submissions.');
-      } else {
-        let html = `
-          <h1>📝 Student Submissions</h1>
-          <table border="1" cellpadding="10" cellspacing="0">
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Location</th>
-              <th>Question</th>
-            </tr>
-        `;
-  
-        rows.forEach(row => {
-          html += `
-            <tr>
-              <td>${row.name}</td>
-              <td>${row.email}</td>
-              <td>${row.location || 'Unknown'}</td>
-              <td>${row.question}</td>
-            </tr>
-          `;
-        });
-  
-        html += '</table>';
-        res.send(html);
-      }
-    });
-  });
-  
-  // Temporary in-memory session mock
-app.use((req, res, next) => {
-    if (!req.session) req.session = {};
-    next();
-  });
-  
-
+app.use('/', publicRoutes);
+app.use('/submit', submissionRoutes);
+app.use('/admin', adminRoutes);
+app.use('/content', contentRoutes);
 
 // Start server
-app.listen(port, () => {
-  console.log(`🚀 Server running at http://localhost:${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
