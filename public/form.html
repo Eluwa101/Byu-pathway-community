@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Submit a Question</title>
+  <meta charset="UTF-8" />
+  <title>Submit a Question | BYU-Pathway Community</title>
+  <link rel="stylesheet" href="/css/global.css" />
+
 </head>
 <body>
-  <h1>Submit a Question</h1>
-  <form action="/submit" method="POST">
-    <label for="name">Your Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  <div id="nav-placeholder"></div>
 
-    <label for="email">Your Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+  <main>
+    <h1>Submit Your Question</h1>
+    <form method="POST" action="/submit">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required /><br />
 
-    <label for="location">Your Location:</label><br>
-    <input type="text" id="location" name="location" readonly><br><br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required /><br />
 
-    <label for="question">Your Question:</label><br>
-    <textarea id="question" name="question" required></textarea><br><br>
+      <label for="location">Location:</label>
+      <input type="text" name="location" id="location" /><br />
 
-    <button type="submit">Submit</button>
-  </form>
+      <label for="question">Question:</label>
+      <textarea name="question" id="question" required></textarea><br />
 
-  <!-- Use type="module" to load init.js -->
-  <script type="module" src="/js/init.js"></script>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script type="module">
+    import { loadSharedElements } from '/js/loadShared.js';
+    loadSharedElements();
+  </script>
 </body>
 </html>
-<!-- <!-- This HTML file provides a form for users to submit their questions. It includes fields for the user's name, email, location, and the question itself. The form submits to the server at the "/submit" endpoint. --> -->
-<!-- <!-- The form uses the POST method to send data to the server. The location field is set to read-only, and the init.js script is loaded as a module. --> -->

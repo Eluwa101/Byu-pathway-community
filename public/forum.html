@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact & Support</title>
+  <title>Student Forum</title>
   <script src="/js/loadShared.js" defer></script>
   <link rel="stylesheet" href="/css/global.css" />
 
 </head>
 <body>
   <div id="nav-placeholder"></div>
+  <script type="module" src="/js/forum.js" defer></script>
+    <main>
+      <h1>Student Support Forum</h1>
+      <p>Discussions and questions will be shown here.</p>
+      <div id="forum-content">Loading forum posts...</div>
+    </main>
 
-  <main>
-    <h1>Contact Us</h1>
-    <p>Reach out to our team for help and support.</p>
-  </main>
 
   <div id="footer-placeholder"></div>
+</body>
+  <!-- Import the shared loader as a module -->
   <script type="module">
     import { loadSharedElements } from '/js/loadShared.js';
     loadSharedElements();
-    </script>
-</body>
+  </script>
 </html>

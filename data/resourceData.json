@@ -1,0 +1,87 @@
+[
+    {
+      "title": "Math Study Guide",
+      "course": "PathwayConnect Math",
+      "description": "A downloadable PDF with explanations, formulas, and practice questions.",
+      "link": "https://example.com/resources/math-guide"
+    },
+    {
+      "title": "Writing Lab Tips",
+      "course": "English Writing",
+      "description": "Strategies and tips from the Writing Lab to help improve your essays.",
+      "link": "https://example.com/resources/writing-tips"
+    } ,
+    {
+      "title": "Time Management for Online Students",
+      "course": "General Study Skills",
+      "description": "A video series on effective time management strategies.",
+      "link": "https://example.com/resources/time-management"
+    },
+    {
+      "title": "Study Group Guidelines",
+      "course": "PathwayConnect",
+      "description": "Best practices for forming and maintaining study groups.",
+      "link": "https://example.com/resources/study-group-guidelines"
+    },
+    {
+      "title": "Online Class Etiquette",
+      "course": "General Online Learning",
+      "description": "A guide to online class etiquette and best practices.",
+      "link": "https://example.com/resources/online-class-etiquette"
+    },
+    {
+      "title": "Research Paper Writing",
+      "course": "English Writing",
+      "description": "A step-by-step guide to writing a research paper.",
+      "link": "https://example.com/resources/research-paper-guide"
+    },
+    {
+      "title": "Effective Note-Taking Techniques",
+      "course": "General Study Skills",
+      "description": "Tips and techniques for effective note-taking during lectures.",
+      "link": "https://example.com/resources/note-taking-techniques"
+    },
+    {
+      "title": "Exam Preparation Checklist",
+      "course": "",
+      "description": "",
+      "link": ""
+    },
+    {
+      "title": "Online Learning Platforms Comparison",
+      "course": "General Online Learning",
+      "description": "A comparison of various online learning platforms.",
+      "link": "https://example.com/resources/online-learning-platforms"
+    },
+    {
+      "title": "Study Apps for Students",
+      "course": "",
+      "description": "",
+      "link": ""
+    },
+    {
+      "title": "Virtual Study Break Ideas",
+      "course": "",
+      "description": "",
+      "link": ""
+    },
+    {
+      "title": "Online Learning Resources",
+      "course": "General Online Learning",
+      "description": "A compilation of online resources for various subjects.",
+      "link": "https://example.com/resources/online-learning-resources"
+    },
+    {
+      "title": "Career Development Resources",
+      "course": "",
+      "description": "",
+      "link": ""
+    },
+    {
+      "title": "Internship Opportunities",
+      "course": "",
+      "description": "",
+      "link": ""
+    }
+  ]
+  

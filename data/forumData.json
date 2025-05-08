@@ -1,0 +1,156 @@
+[
+    {
+      "title": "How to form a study group?",
+      "author": "Student A",
+      "message": "Looking to create a study group for Math 101. Anyone interested?"
+    },
+    {
+      "title": "Weekly Zoom Meetings",
+      "author": "Student B",
+      "message": "We hold weekly Zoom study sessions every Friday. Join us!"
+    },
+    {
+      "title": "Best Study Apps",
+      "author": "Student A",
+      "message": "What are the best apps for studying? I need some recommendations."
+    },
+    {
+      "title": "Online Class Resources",
+      "author": "Student B",
+      "message": "Sharing some great resources for online classes. Check them out!"
+    },
+    {
+      "title": "Virtual Study Groups",
+      "author": "Student C",
+      "message": "Anyone interested in forming a virtual study group for Chemistry 101?"
+    },
+    {
+      "title": "Tips for Online Learning",
+      "author": "Student D",
+      "message": "What are your tips for staying focused during online classes?"
+    },
+    {
+      "title": "Study Break Ideas",
+      "author": "Student E",
+      "message": "What do you do during study breaks to recharge?"
+    },
+    {
+      "title": "Study Tips for Online Classes",
+      "author": "Student C",
+      "message": "Anyone have tips for staying focused during online classes?"
+    },
+    {
+      "title": "Group Project Collaboration",
+      "author": "Student D",
+      "message": "Need help with a group project for History 201. Let's collaborate!"
+    },
+    {
+      "title": "Exam Preparation Resources",
+      "author": "Student E",
+      "message": "Sharing some great resources for exam prep. Check them out!"
+    },
+    {
+      "title": "Time Management Strategies",
+      "author": "Student F",
+      "message": "Struggling with time management. Any strategies that work for you?"
+    },
+    {
+      "title": "Online Class Etiquette",
+      "author": "Student G",
+      "message": "What are the best practices for online class etiquette?"
+    },
+    {
+      "title": "Finding Study Partners",
+      "author": "Student H",
+      "message": "Looking for study partners for Chemistry 101. DM me if interested!"
+    },
+    {
+      "title": "Virtual Study Break Ideas",
+      "author": "Student I",
+      "message": "What do you do during study breaks to recharge?"
+    },
+    {
+      "title": "Best Online Resources for Learning",
+      "author": "Student J",
+      "message": "Sharing my favorite online resources for learning. What are yours?"
+    },
+    {
+      "title": "Feedback on Course Materials",
+      "author": "Student K",
+      "message": "Would love feedback on the course materials for my project."
+    },
+    {
+      "title": "Networking Opportunities",
+      "author": "Student L",
+      "message": "Looking for networking opportunities in the tech industry."
+    },
+    {
+      "title": "Internship Opportunities",
+      "author": "Student M",
+      "message": "Anyone know of internship opportunities in marketing?"
+    },
+    {
+      "title": "Online Class Challenges",
+      "author": "Student N",
+      "message": "What challenges are you facing with online classes? Let's discuss."
+    },
+    {
+      "title": "Study Group Resources",
+      "author": "Student O",
+      "message": "Sharing resources for effective study groups. Check it out!"
+    },
+    {
+      "title": "E-Learning Development Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Assist in developing e-learning content and platforms.",
+      "link": "https://www.example.com/internship18"
+    },
+    {
+      "title": "Marketing Research Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Conduct market research and analysis for marketing strategies.",
+      "link": "https://www.example.com/internship19"
+    },
+    {
+      "title": "Content Writing Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Write and edit content for online courses and materials.",
+      "link": "https://www.example.com/internship20"
+    },
+    {
+      "title": "Graphic Design Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Assist in creating graphics and visual content for marketing.",
+      "link": "https://www.example.com/internship21"
+    },
+    {
+      "title": "Social Media Management Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Manage social media accounts and create engaging content.",
+      "link": "https://www.example.com/internship22"
+    },
+    {
+      "title": "Research Assistant Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Support faculty in research projects and data collection.",
+      "link": "https://www.example.com/internship23"
+    },
+    {
+      "title": "Customer Service Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Assist in customer service operations and support.",
+      "link": "https://www.example.com/internship24"
+    },
+    {
+      "title": "IT Support Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Provide IT support and assistance to students and staff."}
+]

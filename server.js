@@ -5,6 +5,8 @@ import session from 'express-session';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import fs from 'fs';
+import { createRequire } from 'module';
 
 // Load environment variables
 dotenv.config();
@@ -14,6 +16,8 @@ import publicRoutes from './routes/publicRoutes.js';
 import submissionRoutes from './routes/submissionRoutes.js';
 import adminRoutes from './routes/adminroutes.js';
 import contentRoutes from './routes/contentRoutes.js';
+
+
 
 // Setup app and directory
 const app = express();

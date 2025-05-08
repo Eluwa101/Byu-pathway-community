@@ -1,0 +1,192 @@
+[
+    {
+      "title": "Web Development Intern",
+      "company": "BYU-Idaho Online",
+      "location": "Remote",
+      "description": "Help maintain and develop web projects for the Pathway program.",
+      "link": "https://www.example.com/internship1"
+    },
+    {
+      "title": "Student Success Assistant",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Utah, USA",
+      "description": "Support students in their academic journey.",
+      "link": "https://www.example.com/internship2"
+    },
+    {
+      "title": "Software Development Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Assist in software development projects.",
+      "link": "https://www.example.com/internship3"
+    },
+    {
+      "title": "Data Science Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Work on data analysis and machine learning projects.",
+      "link": "https://www.example.com/internship4"
+    },
+    {
+      "title": "Marketing Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Assist with marketing campaigns and social media management.",
+      "link": "https://www.example.com/internship5"
+    },
+    {
+      "title": "Graphic Design Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Create graphics and visual content for various projects.",
+      "link": "https://www.example.com/internship6"
+    },
+    {
+      "title": "Research Assistant",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Assist in research projects related to education and technology.",
+      "link": "https://www.example.com/internship7"
+    },
+    {
+      "title": "Content Writing Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Write articles and content for the university's blog.",
+      "link": "https://www.example.com/internship8"
+    },
+    {
+      "title": "IT Support Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Provide technical support and assistance to students and staff.",
+      "link": "https://www.example.com/internship9"
+    },
+    {
+      "title": "Project Management Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Assist in managing projects and coordinating teams.",
+      "link": "https://www.example.com/internship10"
+    },
+    {
+      "title": "UX/UI Design Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Help design user interfaces and improve user experience.",
+      "link": "https://www.example.com/internship11"
+    },
+    {
+      "title": "Social Media Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Manage social media accounts and create engaging content.",
+      "link": "https://www.example.com/internship12"
+    },
+    {
+      "title": "Video Production Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Assist in video production and editing for online courses.",
+      "link": "https://www.example.com/internship13"
+    },
+    {
+      "title": "Data Entry Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Help with data entry and database management.",
+      "link": "https://www.example.com/internship14"
+    },
+    {
+      "title": "Customer Service Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Provide customer service support to students and staff.",
+      "link": "https://www.example.com/internship15"
+    },
+    {
+      "title": "Business Analyst Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Assist in analyzing business processes and data.",
+      "link": "https://www.example.com/internship16"
+    },
+    {
+      "title": "Network Administration Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Support network administration and IT infrastructure.",
+      "link": "https://www.example.com/internship17"
+    },
+    {
+      "title": "E-Learning Development Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Assist in developing e-learning materials and courses.",
+      "link": "https://www.example.com/internship18"
+    },
+    {
+      "title": "Accounting Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Support accounting and finance teams with various tasks.",
+      "link": "https://www.example.com/internship19"
+    },
+    {
+      "title": "Human Resources Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Assist in HR functions and employee engagement activities.",
+      "link": "https://www.example.com/internship20"
+    },
+    {
+      "title": "Sales and Marketing Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Assist in sales and marketing strategies for the university.",
+      "link": "https://www.example.com/internship21"
+    },
+    {
+      "title": "Web Design Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Help design and maintain the university's website.",
+      "link": "https://www.example.com/internship22"
+    },
+    {
+      "title": "Event Coordination Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Assist in coordinating events and activities for students.",
+      "link": "https://www.example.com/internship23"
+    },
+    {
+      "title": "Content Management Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Support content management and digital marketing efforts.",
+      "link": "https://www.example.com/internship24"
+    },
+    {
+      "title": "Data Analysis Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Assist in data analysis and reporting for various projects.",
+      "link": "https://www.example.com/internship25"
+    },
+    {
+      "title": "Event Planning Intern",
+      "company": "BYU-Pathway Worldwide",
+      "location": "Remote",
+      "description": "Assist in planning and organizing university events.",
+      "link": "https://www.example.com/internship23"
+    },
+    {
+      "title": "Research and Development Intern",
+      "company": "BYU-Idaho",
+      "location": "Remote",
+      "description": "Support R&D projects and initiatives.",
+      "link": "https://www.example.com/internship24"
+    }
+  ]
+  
